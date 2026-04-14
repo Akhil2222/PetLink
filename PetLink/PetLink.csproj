@@ -67,6 +67,7 @@
 
 	<ItemGroup>
 	  <Compile Include=".TEMP\Ananya.cs" />
+	  <Compile Include=".TEMP\Sandali.cs" />
 	</ItemGroup>
 
 	<ItemGroup>

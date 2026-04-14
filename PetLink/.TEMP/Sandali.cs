@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PetLink.TEMP
 {
-    public class Sandali
+    internal class Sandali
     {
     }
 }

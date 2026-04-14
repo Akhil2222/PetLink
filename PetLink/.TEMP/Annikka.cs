@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PetLink.TEMP
 {
-    internal class Annikka
+    public class Annikka
     {
     }
 }

@@ -1,4 +1,4 @@
-﻿using AndroidX.RecyclerView.Widget;
+﻿using PetLink.Pages;
 
 namespace PetLink
 {
@@ -11,9 +11,7 @@ namespace PetLink
         }
         private void RegisterRoutes()
         {
-
-            Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
-
+            
         }
     }
 }

@@ -4,8 +4,7 @@ using System.Text;
 
 namespace PetLink.Models.Titles
 {
-    class TitleLogin
+    class TitlePetProfile 
     {
     }
-
 }

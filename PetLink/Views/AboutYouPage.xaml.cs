@@ -11,7 +11,7 @@ public AboutYouPage()
 
 private async void SubmitClicked(object sender, EventArgs e)
 {
-	string entryText = EntryValue.Text;
+	string entryText = EntryValuePhone.Text;
 
 	if (string.IsNullOrEmpty(entryText))
 	{

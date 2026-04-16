@@ -1,5 +1,5 @@
 ﻿using AndroidX.RecyclerView.Widget;
-using PetLink.Views;
+using PetLink.Pages;
 
 namespace PetLink
 {
@@ -19,7 +19,10 @@ namespace PetLink
             Routing.RegisterRoute(nameof(RegisterPage), typeof(RegisterPage));
 
             //AboutYou Page
-            Routing.RegisterRoute(nameof(AboutYouPage), typeof(AboutYouPage));
+            Routing.RegisterRoute(nameof(AboutYouXAML), typeof(AboutYouXAML));
+
+            //Login Page
+            Routing.RegisterRoute(nameof(LoginPage), typeof(LoginPage));
         }
     }
 }

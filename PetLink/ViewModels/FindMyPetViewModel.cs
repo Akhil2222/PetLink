@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PetLink.ViewModels
 {
-    class FindMyPetViewModel
+    internal class FindMyPetViewModel
     {
     }
 }

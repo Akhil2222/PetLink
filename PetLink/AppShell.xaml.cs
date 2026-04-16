@@ -1,5 +1,6 @@
 ﻿using PetLink.Pages;
 
+
 namespace PetLink
 {
     public partial class AppShell : Shell

@@ -3,10 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PetLink.Pages.AboutYouXAML"
              Title="AboutYouXAML">
-    <VerticalStackLayout>
+    <VerticalStackLayout VerticalOptions="Center"
+                         HorizontalOptions="Center"
+                         Spacing="15">
+
         <Label 
             Text="A Little Bit About You!"
             VerticalOptions="Start" 
             HorizontalOptions="Center" />
+
+        <Entry x:Name="EntryValue"
+               Placeholder="Enter Text Here"
+               PlaceholderColor="Blue" 
+               TextColor="Crimson"
+               WidthRequest="300" />
+
+        <Button Text="Submit"
+                FontAttributes="Bold,Italic"
+                Margin="10"
+                TextColor="White"
+                BackgroundColor="Blue"
+                Clicked="SubmitClicked" />
+
     </VerticalStackLayout>
 </ContentPage>

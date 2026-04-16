@@ -1,15 +1,14 @@
+using CommunityToolkit.Mvvm.ComponentModel;
+using Javax.Security.Auth;
+using PetLink.Models.Titles;
+
 namespace PetLink.ViewModels;
 
 public class AboutYouViewModel : ContentView
 {
-	public AboutYouViewModel()
+	public partial class AboutYouViewModel : ObservableObject
 	{
-		Content = new VerticalStackLayout
-		{
-			Children = {
-				new Label { HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center, Text = "Welcome to .NET MAUI!"
-				}
-			}
-		};
+		[ObservableProperty]
+		private string title = TitleAboutYou.Title;
 	}
 }

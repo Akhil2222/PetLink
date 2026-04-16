@@ -1,4 +1,7 @@
-﻿namespace PetLink
+﻿using AndroidX.RecyclerView.Widget;
+using PetLink.Views;
+
+namespace PetLink
 {
     public partial class AppShell : Shell
     {
@@ -9,7 +12,8 @@
         }
         private void RegisterRoutes()
         {
-            
+            Routing.RegisterRoute(nameof(AboutYouPage), typeof(AboutYouPage));
+
         }
     }
 }

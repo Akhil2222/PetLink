@@ -1,4 +1,6 @@
-﻿namespace PetLink
+﻿using PetLink.Pages;
+
+namespace PetLink
 {
     public partial class AppShell : Shell
     {
@@ -9,9 +11,7 @@
         }
         private void RegisterRoutes()
         {
-
-            // Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
-
+            
         }
     }
 }

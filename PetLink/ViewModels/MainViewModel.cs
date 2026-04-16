@@ -1,5 +1,4 @@
-﻿using Android.Text.Style;
-using AndroidX.RecyclerView.Widget;
+﻿using CommunityToolkit.Mvvm;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.VisualStudio.PlatformUI;
@@ -10,7 +9,7 @@ using System.Text;
 
 namespace PetLink.ViewModels
 {
-    public partial class MainViewModel : CommunityToolkit.Mvvm.ComponentModel.ObservableObject
+    public partial class MainViewModel : ObservableObject
     {
         //public string Layouts { get; set; } = TitleMain.Layouts;
         //public string Images { get; set; } = TitleMain.Images;

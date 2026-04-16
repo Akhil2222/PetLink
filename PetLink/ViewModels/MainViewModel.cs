@@ -22,6 +22,12 @@ namespace PetLink.ViewModels
             await Shell.Current.GoToAsync(nameof(LoginPage));
         }
 
+        [RelayCommand]
+        private async Task RegisterClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(RegisterPage));
+        }
+
         public MainViewModel()
         {
 

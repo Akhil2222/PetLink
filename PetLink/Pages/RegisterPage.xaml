@@ -3,36 +3,47 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PetLink.Pages.RegisterPage"
              Title="{Binding Title}">
-    <VerticalStackLayout Padding="24,16"
-                         Spacing="24">
 
-        <Grid Margin="25,35,29,20"
-              RowSpacing="6"
-              ColumnSpacing="12">
+    <VerticalStackLayout VerticalOptions="Center"
+                         HorizontalOptions="Center"
+                         Spacing="15">
 
-            <!--Create a 3 rows x 2 columns grid -->
-            <Grid.RowDefinitions>
-                <!-- row for first pair -->
-                <RowDefinition Height="Auto" />
-                <!-- row for second pair -->
-                <RowDefinition Height="Auto" />
-                <!-- row for wide SQLite -->
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
+        <Entry x:Name="FirstNameValue"
+                Placeholder="Enter First Name"
+                PlaceholderColor="Blue"
+                TextColor="Red"
+                WidthRequest="300" />
 
-            <Grid.ColumnDefinitions>
-                <!-- left column -->
-                <ColumnDefinition Width="*" />
-                <!-- right column -->
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
+        <Entry x:Name="LastNameValue"
+                Placeholder="Enter Last Name"
+                PlaceholderColor="Blue"
+                TextColor="Red"
+                WidthRequest="300" />
 
-            <!-- Row 0 -->
-            <Button Grid.Row="0"
-                    Grid.Column="0"
-                    Text="{Binding AboutYouButton}"
-                    Command="{Binding AboutYouClickedCommand}"
-                    Style="{StaticResource TileButton}"/>
-        </Grid>
+        <Entry x:Name="UserNameValue"
+                Placeholder="Enter Username/Gmail"
+                PlaceholderColor="Blue"
+                TextColor="Red"
+                WidthRequest="300" />
+
+        <Entry x:Name="PasswordValue"
+                Placeholder="Enter Password"
+                PlaceholderColor="Blue"
+                TextColor="Red"
+                WidthRequest="300" />
+
+        <Entry x:Name="ConfirmPasswordValue"
+                Placeholder="Confirm Password"
+                PlaceholderColor="Blue"
+                TextColor="Red"
+                WidthRequest="300" />
+
+        <Button Text="Register"
+                FontAttributes="Bold, Italic"
+                Margin="10"
+                TextColor="White"
+                BackgroundColor="Blue"
+                Clicked="RegisterSubmitClicked"
+                Command="{Binding AboutYouClickedCommand}"/>
     </VerticalStackLayout>
 </ContentPage>

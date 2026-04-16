@@ -5,8 +5,7 @@ using System.Text;
 
 namespace PetLink.ViewModels
 {
-    class LoginViewModel : ObservableObject
+    class PetProfileViewModel : ObservableObject
     {
     }
-
 }

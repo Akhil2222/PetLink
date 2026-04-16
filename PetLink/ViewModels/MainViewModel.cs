@@ -1,5 +1,4 @@
-﻿using Android.Text.Style;
-using AndroidX.RecyclerView.Widget;
+﻿using CommunityToolkit.Mvvm;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using PetLink.Models.Titles;
@@ -12,14 +11,25 @@ namespace PetLink.ViewModels
 {
     public partial class MainViewModel : ObservableObject
     {
-        public string Title { get; set; } = TitleMain.Title;
-        public string Login { get; set; } = TitleMain.Login;
-        public string Register { get; set; } = TitleMain.Register;
+        //public string Layouts { get; set; } = TitleMain.Layouts;
+        //public string Images { get; set; } = TitleMain.Images;
+        //public string Collections { get; set; } = TitleMain.Collections;
+        //public string Controls { get; set; } = TitleMain.Controls;
+        //public string SQLLITE { get; set; } = TitleMain.SQLLite;
+
+        [ObservableProperty]
+        private string title = TitleMain.Title;
 
         [RelayCommand]
-        private async Task LoginClicked()
+        private async Task ControlsClicked()
         {
-            await Shell.Current.GoToAsync(nameof(LoginPage));
+            await Shell.Current.GoToAsync(nameof(MainPage));
+        }
+
+        [RelayCommand]
+        private async Task RegisterClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(RegisterPage));
         }
 
         public MainViewModel()

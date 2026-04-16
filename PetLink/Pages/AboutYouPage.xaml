@@ -7,16 +7,24 @@
                          HorizontalOptions="Center"
                          Spacing="15">
 
-        <Label 
-            Text="A Little Bit About You!"
-            VerticalOptions="Start" 
-            HorizontalOptions="Center" />
-
         <Entry x:Name="EntryValuePhone"
                Placeholder="Enter Phone Number Here"
                PlaceholderColor="Blue" 
                TextColor="Crimson"
                WidthRequest="300" />
+
+        <Entry x:Name="EntryValueBirthdate"
+               Placeholder="Enter Birth Date Here"
+               PlaceholderColor="Blue" 
+               TextColor="Crimson"
+               WidthRequest="300" />
+
+        <Entry x:Name="EntryValueZipcode"
+               Placeholder="Enter Zipcode Here"
+               PlaceholderColor="Blue" 
+               TextColor="Crimson"
+               WidthRequest="300" />
+
 
         <Button Text="Submit"
                 FontAttributes="Bold,Italic"

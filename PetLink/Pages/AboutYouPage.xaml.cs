@@ -1,7 +1,7 @@
 using PetLink.Models.Titles;
 using PetLink.ViewModels;
 
-namespace PetLink.Views;
+namespace PetLink.Pages;
 
 public AboutYouPage()
 {
@@ -11,10 +11,25 @@ public AboutYouPage()
 
 private async void SubmitClicked(object sender, EventArgs e)
 {
-	string entryText = EntryValuePhone.Text;
+	string entryTextPhone = EntryValuePhone.Text;
 
-	if (string.IsNullOrEmpty(entryText))
+    string entryTextBirthday = EntryValueBirthdate.Text;
+
+    string entryTextZipcode = EntryValueZipcode.Text;
+
+
+    if (string.IsNullOrEmpty(entryTextPhone))
 	{
 		await Shell.Current.DisplayAlert(TitleAboutYou.Title, "Entry is empty. Please enter text.", "OK");
 	}
+
+    if (string.IsNullOrEmpty(entryTextBirthday))
+    {
+        await Shell.Current.DisplayAlert(TitleAboutYou.Title, "Entry is empty. Please enter text.", "OK");
+    }
+
+    if (string.IsNullOrEmpty(entryTextZipcode))
+    {
+        await Shell.Current.DisplayAlert(TitleAboutYou.Title, "Entry is empty. Please enter text.", "OK");
+    }
 }

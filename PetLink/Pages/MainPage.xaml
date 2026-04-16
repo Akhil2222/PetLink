@@ -12,11 +12,9 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
@@ -27,7 +25,7 @@
                     Style="{StaticResource TileButton}"/>
 
             <Button Grid.Row="1"
-                    Grid.Column="1"
+                    Grid.Column="0"
                     Text="{Binding Register}"
                     Command="{Binding RegisterClickedCommand}"
                     Style="{StaticResource TileButton}"/>

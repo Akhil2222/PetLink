@@ -1,12 +1,14 @@
 using PetLink.Models.Titles;
 using PetLink.ViewModels;
 
-namespace PetLink.Pages;
+namespace PetLink.Views;
 
 public AboutYouPage()
 {
 	InitializeComponent();
 	BindingContext = new AboutYouViewModel();
+    UpdateVisuals(MySlider.Value);
+    SetPlatformPadding();
 }
 
 private async void SubmitClicked(object sender, EventArgs e)

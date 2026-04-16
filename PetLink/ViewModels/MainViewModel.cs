@@ -3,6 +3,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using PetLink.Models.Titles;
 using PetLink.Pages;
+using PetLink.Views;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -30,6 +31,12 @@ namespace PetLink.ViewModels
         private async Task RegisterClicked()
         {
             await Shell.Current.GoToAsync(nameof(RegisterPage));
+        }
+
+        [RelayCommand]
+        private async Task AboutYouClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(AboutYouPage));
         }
 
         public MainViewModel()

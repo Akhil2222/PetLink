@@ -10,7 +10,8 @@ public partial class AboutYouViewModel : ObservableObject
 	[ObservableProperty]
 	private string title = TitleAboutYou.Title;
 
-	[RelayCommand]
-	private async Task AboutYouClicked()
+	public AboutYouViewModel()
+	{
+	}
 
 }

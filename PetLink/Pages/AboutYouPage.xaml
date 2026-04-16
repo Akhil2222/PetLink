@@ -33,5 +33,14 @@
                 BackgroundColor="Blue"
                 Clicked="SubmitClicked" />
 
+        <Slider x:Name="MySlider"
+                Minimum="0" Maximum="1" Value="1"
+                ThumbColor="Blue" MaximumTrackColor="BlueViolet" MinimumTrackColor="DarkOrange"
+                HorizontalOptions="Fill"
+                ValueChanged="OnSliderValueChanged" />
+
+        <Label x:Name="ValueLabel"
+               FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" />
+
     </VerticalStackLayout>
 </ContentPage>

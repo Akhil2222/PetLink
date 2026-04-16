@@ -6,6 +6,6 @@ namespace PetLink.Models.Titles
 {
     public static class TitleFindMyPet
     {
-        public string Title { get; set; } = "Find My Pet";
+        public static string Title { get; set; } = "Find My Pet";
     }
 }

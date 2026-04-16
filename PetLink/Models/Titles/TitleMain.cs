@@ -8,7 +8,7 @@ namespace PetLink.Models.Titles
 {
     public static class TitleMain
     {
-        public static string Title { get; } = "PetLink";
+        public static string Title { get; } = "";
         public static string Login { get; } = "Login";
         public static string Register { get; } = "Register";
 

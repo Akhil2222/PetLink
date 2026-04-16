@@ -1,6 +1,4 @@
-﻿using Android.Database;
-using AndroidX.RecyclerView.Widget;
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using PetLink.Models.Titles;
 using PetLink.Pages;

@@ -30,8 +30,8 @@
             <!-- Row 0 -->
             <Button Grid.Row="0"
                     Grid.Column="0"
-                    Text="{Binding Layouts}"
-                    Command="{Binding LayoutsClickedCommand}"
+                    Text="{Binding AboutYouButton}"
+                    Command="{Binding AboutYouClickedCommand}"
                     Style="{StaticResource TileButton}"/>
         </Grid>
     </VerticalStackLayout>

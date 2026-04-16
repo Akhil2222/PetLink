@@ -1,6 +1,4 @@
-﻿using AndroidX.RecyclerView.Widget;
-using PetLink.Pages;
-using PetLink.Views;
+﻿using PetLink.Pages;
 
 namespace PetLink
 {

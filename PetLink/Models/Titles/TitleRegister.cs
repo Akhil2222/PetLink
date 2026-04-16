@@ -4,6 +4,6 @@
     {
         public static string Title { get; } = "Register";
 
-        public static string SubmitButton { get; } = "Submit";
+        public static string AboutYouButton { get; } = "Submit";
     }
 }

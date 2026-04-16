@@ -11,7 +11,7 @@ namespace PetLink
         }
         private void RegisterRoutes()
         {
-            
+            Routing.RegisterRoute(nameof(LoginPage), typeof(LoginPage));
         }
     }
 }

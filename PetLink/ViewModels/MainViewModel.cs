@@ -22,9 +22,9 @@ namespace PetLink.ViewModels
         private string title = TitleMain.Title;
 
         [RelayCommand]
-        private async Task ControlsClicked()
+        private async Task LoginClicked()
         {
-            await Shell.Current.GoToAsync(nameof(MainPage));
+            await Shell.Current.GoToAsync(nameof(LoginPage));
         }
 
         [RelayCommand]

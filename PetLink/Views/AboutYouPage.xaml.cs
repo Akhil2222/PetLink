@@ -1,7 +1,7 @@
 using PetLink.Models.Titles;
 using PetLink.ViewModels;
 
-namespace PetLink.Pages;
+namespace PetLink.Views;
 
 public AboutYouPage()
 {

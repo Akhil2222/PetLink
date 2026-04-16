@@ -1,5 +1,6 @@
 ﻿using PetLink.Pages;
 
+
 namespace PetLink
 {
     public partial class AppShell : Shell
@@ -22,6 +23,7 @@ namespace PetLink
 
             //Login Page
             Routing.RegisterRoute(nameof(LoginPage), typeof(LoginPage));
+            Routing.RegisterRoute(nameof(RegisterPage), typeof(RegisterPage));
         }
     }
 }

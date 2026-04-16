@@ -12,29 +12,10 @@
         <Grid Padding="16,24,16,16"
           RowSpacing="6"
           ColumnSpacing="12">
-
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
-
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-            <Button Grid.Row="0"
-                    Grid.Column="0"
-                    Text="{Binding Login}"
-                    Command="{Binding LoginClickedCommand}"
-                    Style="{StaticResource TileButton}"/>
-
-            <Button Grid.Row="1"
-                    Grid.Column="0"
-                    Text="{Binding Register}"
-                    Command="{Binding RegisterClickedCommand}"
-                    Style="{StaticResource TileButton}"/>
+            
+          
 
         </Grid>
-
     </VerticalStackLayout>
+    
 </ContentPage>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PetLink.Pages.MainPage"
+             Title="{Binding Title}">
+    
+    <VerticalStackLayout>
+        <Grid Padding="16,24,16,16"
+          RowSpacing="6"
+          ColumnSpacing="12">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Row="0"
+                Grid.Column="0"
+                Text="{Binding Layouts}"
+                Command="{Binding LayoutsClickedCommand}"
+                Style="{StaticResource TileButton}"/>
+
+            <Button Grid.Row="0"
+                Grid.Column="1"
+                Text="{Binding Images}"
+                Command="{Binding ImagesClickedCommand}"
+                Style="{StaticResource TileButton}"/>
+
+            <Button Grid.Row="1"
+                Grid.Column="0"
+                Text="{Binding Collections}"
+                Command="{Binding CollectionsClickedCommand}"
+                Style="{StaticResource TileButton}"/>
+
+            <Button Grid.Row="1"
+                Grid.Column="1"
+                Text="{Binding Controls}"
+                Command="{Binding ControlsClickedCommand}"
+                Style="{StaticResource TileButton}"/>
+
+            <Button Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Text="{Binding SQLLITE}"
+                Style="{StaticResource TileButton}"/>
+
+        </Grid>
+
+    </VerticalStackLayout>
+</ContentPage>

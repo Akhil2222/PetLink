@@ -1,10 +1,10 @@
 ﻿namespace PetLink
 {
-    public partial class MainPage : ContentPage
+    public partial class OldMainPage : ContentPage
     {
         int count = 0;
 
-        public MainPage()
+        public OldMainPage()
         {
             InitializeComponent();
         }

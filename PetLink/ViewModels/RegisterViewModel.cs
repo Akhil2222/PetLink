@@ -1,8 +1,9 @@
-﻿using Android.Database;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using PetLink.Models.Titles;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using CommunityToolkit.Mvvm.Input;
 
 namespace PetLink.ViewModels
 {

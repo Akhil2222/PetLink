@@ -1,4 +1,4 @@
-namespace PetLink.Views;
+namespace PetLink.Pages;
 
 public partial class RegisterPage : ContentPage
 {

@@ -3,5 +3,7 @@
     public static class TitleRegister
     {
         public static string Title { get; } = "Register";
+
+        public static string SubmitButton { get; } = "Submit";
     }
 }

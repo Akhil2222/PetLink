@@ -1,5 +1,4 @@
-﻿using AndroidX.RecyclerView.Widget;
-using PetLink.Views;
+﻿using PetLink.Views;
 
 namespace PetLink
 {

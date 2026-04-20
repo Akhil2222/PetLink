@@ -20,6 +20,12 @@ namespace PetLink.ViewModels
         [ObservableProperty]
         private string title = TitleMain.Title;
 
+        [ObservableProperty]
+        private string login = TitleMain.Login;
+
+        [ObservableProperty]
+        private string register = TitleMain.Register;
+
         [RelayCommand]
         private async Task LoginClicked()
         {

@@ -8,7 +8,8 @@
         <Label Text="{Binding Title}"
                FontSize="Large" 
                TextColor="Blue" 
-               FontAttributes="Bold" />
+               FontAttributes="Bold"
+               Margin="100,50,0,0"/>
 
         <Grid Padding="16,24,16,16"
           RowSpacing="6"

@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using CommunityToolkit.Mvvm.ComponentModel;
+
 
 namespace PetLink.ViewModels
 {
-    class LikedPetsViewModel
+    public partial class LikedPetsViewModel : ObservableObject
     {
     }
 }

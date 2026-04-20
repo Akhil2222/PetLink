@@ -81,8 +81,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Pages\AboutYouXAML.xaml.cs">
-	    <DependentUpon>AboutYouXAML.xaml</DependentUpon>
+	  <Compile Update="Pages\AboutYouPage.xaml.cs">
+	    <DependentUpon>AboutYouPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 

@@ -18,6 +18,9 @@ namespace PetLink.ViewModels
         //public string SQLLITE { get; set; } = TitleMain.SQLLite;
 
         [ObservableProperty]
+        private string title = TitleDashboard.Title;
+
+        [ObservableProperty]
         private string profile = TitleDashboard.Profile;
 
         [ObservableProperty]

@@ -12,8 +12,8 @@
                Margin="100,50,0,0"/>
 
         <Grid Padding="16,24,16,16"
-          RowSpacing="6"
-          ColumnSpacing="12">
+              RowSpacing="6"
+              ColumnSpacing="12">
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>

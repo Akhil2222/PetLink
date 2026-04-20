@@ -7,6 +7,6 @@ public partial class LikedPetsPage : ContentPage
 	public LikedPetsPage()
 	{
 		InitializeComponent();
-        BindingContext = new LikedPetsViewModel();
+		BindingContext = new LikedPetsViewModel();
     }
 }

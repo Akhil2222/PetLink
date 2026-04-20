@@ -81,6 +81,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Pages\AboutYouXAML.xaml.cs">
+	    <DependentUpon>AboutYouXAML.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Models\Titles\TitleContactShelter.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

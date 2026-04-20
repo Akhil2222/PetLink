@@ -1,9 +1,12 @@
+using PetLink.ViewModels;
+
 namespace PetLink.Pages;
 
 public partial class FindMyPetPage : ContentPage
 {
-	public FindMyPetPage()
-	{
-		InitializeComponent();
-	}
+    public FindMyPetPage()
+    {
+        InitializeComponent();
+        BindingContext = new FindMyPetViewModel();
+    }
 }

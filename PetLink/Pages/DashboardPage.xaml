@@ -17,38 +17,28 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
             <Button Grid.Row="0"
                     Grid.Column="0"
-                    Text="{Binding Login}"
-                    Command="{Binding LoginClickedCommand}"
+                    Text="{Binding Profile}"
+                    Command="{Binding ProfileClickedCommand}"
                     Style="{StaticResource TileButton}"/>
 
             <Button Grid.Row="1"
                     Grid.Column="0"
-                    Text="{Binding Register}"
-                    Command="{Binding RegisterClickedCommand}"
+                    Text="{Binding FindMyPet}"
+                    Command="{Binding FindMyPetClickedCommand}"
                     Style="{StaticResource TileButton}"/>
             <Button Grid.Row="0"
                     Grid.Column="0"
-                    Text="{Binding Login}"
-                    Command="{Binding LoginClickedCommand}"
-                    Style="{StaticResource TileButton}"/>
-
-            <Button Grid.Row="1"
-                    Grid.Column="0"
-                    Text="{Binding Register}"
-                    Command="{Binding RegisterClickedCommand}"
+                    Text="{Binding LikedPets}"
+                    Command="{Binding LikedPetsClickedCommand}"
                     Style="{StaticResource TileButton}"/>
         </Grid>
 

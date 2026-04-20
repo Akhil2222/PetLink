@@ -9,7 +9,6 @@ namespace PetLink.ViewModels
     class PetProfileViewModel : ObservableObject
     {
         public string Name => TitlePetProfile.Name;
-        publi
 
     }
 }

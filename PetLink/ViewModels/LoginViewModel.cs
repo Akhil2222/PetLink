@@ -20,6 +20,11 @@ namespace PetLink.ViewModels
         {
             await Shell.Current.GoToAsync(nameof(DashboardPage));
         }
+
+        public LoginViewModel()
+        {
+
+        }
     }
 
 }

@@ -11,14 +11,9 @@ namespace PetLink.ViewModels
 {
     public partial class MainViewModel : ObservableObject
     {
-        [ObservableProperty]
-        private string title = TitleMain.Title;
-
-        [ObservableProperty]
-        private string login = TitleMain.Login;
-
-        [ObservableProperty]
-        private string register = TitleMain.Register;
+        public string Title => TitleMain.Title;
+        public string Login => TitleMain.Login;
+        public string Register => TitleMain.Register;
 
         [RelayCommand]
         private async Task LoginClicked()

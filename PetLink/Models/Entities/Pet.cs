@@ -1,14 +1,13 @@
-﻿using SQLite;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace PetLink.Models.Tables
+namespace PetLink.Models.Entities
 {
     public class Pet
     {
-        [PrimaryKey, AutoIncrement]
-        public int PetID { get; set; }
-
         public string Name { get; set; }
-        public string Species { get; set; }
+        public string Species { get; set; } // Enums are usually stored as strings or ints
         public int Age { get; set; }
         public double Weight { get; set; }
         public string Health { get; set; }
@@ -16,9 +15,7 @@ namespace PetLink.Models.Tables
         public int Activity { get; set; }
         public bool Training { get; set; }
 
-        [Indexed]
-        public long ShelterID { get; set; }
+        // Foreign Key Reference
+        public string ShelterID { get; set; }
     }
 }
-
-enum Health

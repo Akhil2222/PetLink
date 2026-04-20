@@ -8,42 +8,53 @@
                          HorizontalOptions="Center"
                          Spacing="15">
 
+        <Label Margin="75,-200,75,0"
+               Text="Join the PetLink Family!"
+               FontAttributes="Bold"
+               FontSize="Title"
+               TextColor="Blue"/>
+
         <Entry x:Name="FirstNameValue"
                 Placeholder="Enter First Name"
-                PlaceholderColor="Blue"
-                TextColor="Red"
+                PlaceholderColor="Gray"
+                TextColor="Black"
                 WidthRequest="300" />
 
         <Entry x:Name="LastNameValue"
                 Placeholder="Enter Last Name"
-                PlaceholderColor="Blue"
-                TextColor="Red"
+                PlaceholderColor="Gray"
+                TextColor="Black"
                 WidthRequest="300" />
 
         <Entry x:Name="UserNameValue"
                 Placeholder="Enter Username/Gmail"
-                PlaceholderColor="Blue"
-                TextColor="Red"
+                PlaceholderColor="Gray"
+                TextColor="Black"
                 WidthRequest="300" />
 
         <Entry x:Name="PasswordValue"
                 Placeholder="Enter Password"
-                PlaceholderColor="Blue"
-                TextColor="Red"
+                PlaceholderColor="Gray"
+                TextColor="Black"
                 WidthRequest="300" />
+
+        <Label Margin="60,-15,40,0"
+               Text="{Binding PasswordConditions}"
+               FontSize="13"
+               TextColor="Black" />
 
         <Entry x:Name="ConfirmPasswordValue"
                 Placeholder="Confirm Password"
-                PlaceholderColor="Blue"
-                TextColor="Red"
+                PlaceholderColor="Gray"
+                TextColor="Black"
                 WidthRequest="300" />
 
         <Button Text="Register"
-                FontAttributes="Bold, Italic"
-                Margin="10"
+                FontAttributes="Bold"
+                FontSize="15"
+                Margin="40,10,40,0"
                 TextColor="White"
-                BackgroundColor="Blue"
-                Clicked="RegisterSubmitClicked"
-                Command="{Binding AboutYouClickedCommand}"/>
+                BackgroundColor="DarkGreen"
+                Clicked="RegisterSubmitClicked"/>
     </VerticalStackLayout>
 </ContentPage>

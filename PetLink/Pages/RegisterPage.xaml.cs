@@ -19,29 +19,19 @@ public partial class RegisterPage : ContentPage
         string password = PasswordValue.Text;
         string confirmPassword = ConfirmPasswordValue.Text;
 
-        if (string.IsNullOrWhiteSpace(firstName))
+        if (string.IsNullOrWhiteSpace(firstName)
+            && string.IsNullOrWhiteSpace(lastName)
+            && string.IsNullOrWhiteSpace(username)
+            && string.IsNullOrWhiteSpace(password)
+            && string.IsNullOrWhiteSpace(confirmPassword))
         {
             await Shell.Current.DisplayAlert(TitleRegister.Title, "Entry is empty. Please enter text.", "OK");
         }
 
-        if (string.IsNullOrWhiteSpace(lastName))
+        else
         {
-            await Shell.Current.DisplayAlert(TitleRegister.Title, "Entry is empty. Please enter text.", "OK");
-        }
-
-        if (string.IsNullOrWhiteSpace(username))
-        {
-            await Shell.Current.DisplayAlert(TitleRegister.Title, "Entry is empty. Please enter text.", "OK");
-        }
-
-        if (string.IsNullOrWhiteSpace(password))
-        {
-            await Shell.Current.DisplayAlert(TitleRegister.Title, "Entry is empty. Please enter text.", "OK");
-        }
-
-        if (string.IsNullOrWhiteSpace(confirmPassword))
-        {
-            await Shell.Current.DisplayAlert(TitleRegister.Title, "Entry is empty. Please enter text.", "OK");
+            await Shell.Current.GoToAsync($"{nameof(AboutYouXAML)}");
         }
     }
+
 }

@@ -13,6 +13,9 @@ namespace PetLink.ViewModels
     {
         [ObservableProperty]
         private string title = TitleRegister.Title;
+        
+        [ObservableProperty]
+        private string passwordConditions = TitleRegister.PasswordConditions;
 
 
         [RelayCommand]

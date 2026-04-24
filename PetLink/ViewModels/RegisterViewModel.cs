@@ -22,7 +22,7 @@ namespace PetLink.ViewModels
         private async Task AboutYouClicked()
         {
             //await Application.Current.MainPage.Navigation.PushAsync(new LayoutsPage());
-            await Shell.Current.GoToAsync(nameof(AboutYouXAML));
+            await Shell.Current.GoToAsync(nameof(AboutYouPage));
         }
 
         public RegisterViewModel()

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PetLink.Pages.AboutYouXAML"
-             Title="AboutYouXAML">
+             x:Class="PetLink.Pages.AboutYouPage"
+             Title="About You">
     <VerticalStackLayout>
         <Label 
             Text="A Little Bit About You!"

@@ -30,7 +30,7 @@ public partial class RegisterPage : ContentPage
 
         else
         {
-            await Shell.Current.GoToAsync($"{nameof(AboutYouXAML)}");
+            await Shell.Current.GoToAsync($"{nameof(AboutYouPage)}");
         }
     }
 

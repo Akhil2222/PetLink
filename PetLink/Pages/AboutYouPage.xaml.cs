@@ -2,9 +2,9 @@ using PetLink.ViewModels;
 
 namespace PetLink.Pages;
 
-public partial class AboutYouXAML : ContentPage
+public partial class AboutYouPage : ContentPage
 {
-	public AboutYouXAML()
+	public AboutYouPage()
 	{
 		InitializeComponent();
         BindingContext = new AboutYouViewModel();

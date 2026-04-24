@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace PetLink.Models.Titles
+﻿namespace PetLink.Models.Titles
 {
-    class TitleLikedPets
+    public static class TitleLikedPets
     {
+        public static string Title { get; } = "Liked Pets";
     }
 }

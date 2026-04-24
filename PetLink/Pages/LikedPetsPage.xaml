@@ -25,13 +25,13 @@
                    HorizontalTextAlignment="Start"
                    TextColor="Black"/>
 
-            <Button Text="Register"
-                    FontAttributes="Bold"
-                    FontSize="15"
-                    Margin="40,10,40,0"
+            <Button Text="Go To Pet Profile"
+                    FontAttributes="Bold, Italic"
+                    Margin="10"
                     TextColor="White"
-                    BackgroundColor="DarkGreen"
-                    Command="{Binding PetProfilePage}"/>
+                    BackgroundColor="Green"
+                    Command="{Binding PetProfilePage}" />
+            
         </Grid>
     </VerticalStackLayout>
 

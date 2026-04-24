@@ -4,9 +4,9 @@ namespace PetLink.Pages;
 
 public partial class LikedPetsPage : ContentPage
 {
-	public LikedPetsPage()
+	public LikedPetsPage(LikedPetsViewModel vm)
 	{
 		InitializeComponent();
-		BindingContext = new LikedPetsViewModel();
+		BindingContext = vm;
     }
 }

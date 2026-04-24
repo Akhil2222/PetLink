@@ -4,9 +4,9 @@ namespace PetLink.Pages;
 
 public partial class ContactShelterPage : ContentPage
 {
-	public ContactShelterPage()
+	public ContactShelterPage(ContactShelterPage vm)
 	{
 		InitializeComponent();
-        BindingContext = new ContactShelterViewModel();
+        BindingContext = vm;
     }
 }

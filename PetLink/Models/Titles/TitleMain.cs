@@ -5,6 +5,6 @@
         public static string Title { get; } = "Welcome To PetLink";
         public static string Login { get; } = "Login";
         public static string Register { get; } = "Register";
-
+        public static string PetProfile { get; } = "Pet Profile";
     }
 }

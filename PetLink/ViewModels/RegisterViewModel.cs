@@ -13,13 +13,40 @@ namespace PetLink.ViewModels
         [ObservableProperty]
         private string passwordConditions = TitleRegister.PasswordConditions;
 
+        
+        [ObservableProperty]
+        private string firstname;
+        
+        [ObservableProperty]
+        private string lastname;
 
-        //[RelayCommand]
-        //private async Task AboutYouClicked()
-        //{
-        //    //await Application.Current.MainPage.Navigation.PushAsync(new LayoutsPage());
-        //    await Shell.Current.GoToAsync(nameof(AboutYouPage));
-        //}
+        [ObservableProperty]
+        private string username;
+
+        [ObservableProperty]
+        private string password;
+
+        [ObservableProperty]
+        private string confirmPassword;
+
+        [RelayCommand]
+        private async Task RegisterSubmitClicked()
+        {
+            if (string.IsNullOrWhiteSpace(firstname)
+                && string.IsNullOrWhiteSpace(lastname)
+                && string.IsNullOrWhiteSpace(username)
+                && string.IsNullOrWhiteSpace(password)
+                && string.IsNullOrWhiteSpace(confirmPassword))
+            {
+                await Shell.Current.DisplayAlert(TitleRegister.Title, "Entry is empty. Please enter text.", "OK");
+                return;
+            }
+
+            else
+            {
+                await Shell.Current.GoToAsync($"{nameof(AboutYouPage)}");
+            }
+        }
 
         public RegisterViewModel()
         {

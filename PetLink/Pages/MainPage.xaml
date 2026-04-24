@@ -18,6 +18,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -35,6 +36,12 @@
                     Text="{Binding Register}"
                     Command="{Binding RegisterClickedCommand}"
                     Style="{StaticResource TileButton}"/>
+
+            <Button Grid.Row="2"
+                    Grid.Column="0"
+                    Text="{Binding PetProfile}"
+                    Command="{Binding PetProfileClickedCommand}"
+                    Style="{StaticResource TileButton}"/>   
 
         </Grid>
 

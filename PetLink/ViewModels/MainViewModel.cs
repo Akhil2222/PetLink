@@ -23,11 +23,17 @@ namespace PetLink.ViewModels
             await Shell.Current.GoToAsync(nameof(RegisterPage));
         }
 
-        //[RelayCommand]
-        //private async Task AboutYouClicked()
-        //{
-        //    await Shell.Current.GoToAsync(nameof(AboutYouPage));
-        //}
+        [RelayCommand]
+        private async Task AboutYouClicked()
+        {
+            //await Shell.Current.GoToAsync(nameof(AboutYouPage));
+        }
+
+        [RelayCommand]
+        private async Task PetProfileClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(PetProfilePage));
+        }
 
         public MainViewModel()
         {

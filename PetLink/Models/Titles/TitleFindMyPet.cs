@@ -4,7 +4,8 @@ using System.Text;
 
 namespace PetLink.Models.Titles
 {
-    class TitleFindMyPet
+    public static class TitleFindMyPet
     {
+        public static string Title { get; set; } = "Find My Pet";
     }
 }

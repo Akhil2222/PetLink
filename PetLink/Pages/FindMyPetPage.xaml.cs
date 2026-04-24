@@ -4,9 +4,9 @@ namespace PetLink.Pages;
 
 public partial class FindMyPetPage : ContentPage
 {
-    public FindMyPetPage()
-    {
-        InitializeComponent();
-        BindingContext = new FindMyPetViewModel();
-    }
+	public FindMyPetPage(FindMyPetViewModel vm)
+	{
+		InitializeComponent();
+		BindingContext = vm;
+	}
 }

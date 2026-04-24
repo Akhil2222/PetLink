@@ -1,10 +1,12 @@
-﻿using System;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace PetLink.ViewModels
 {
-    class FindMyPetViewModel
+    public partial class FindMyPetViewModel: ObservableObject
     {
+        
     }
 }

@@ -1,14 +1,22 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using PetLink.Models.Titles;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace PetLink.ViewModels
+namespace MyFirstMauiApp.View_Models
 {
     public partial class PetProfileViewModel : ObservableObject
     {
-        public string Name => TitlePetProfile.Name;
+        [ObservableProperty]
+        private ImageSource imageSourceURL;
+        public PetProfileViewModel()
+        {
+            ImageSourceURL = new UriImageSource
+            {
+                Uri = new Uri(TitlePetProfile.Image),
+                CachingEnabled = true,
+                CacheValidity = TimeSpan.FromDays(1)
+
+            };
+        }
 
     }
 }

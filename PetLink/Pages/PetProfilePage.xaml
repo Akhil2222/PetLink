@@ -5,8 +5,24 @@
              Title="PetProfilePage">
     
     <VerticalStackLayout>
+
+        <Image Source="{Binding ImageSourceURL}"/>
         
+        <Label Text="{Binding Species}"
+               FontAttributes="Bold"
+               FontSize="Medium"
+               TextColor="Black"/>
+
+        <Label Text="{Binding Age}"
+               FontAttributes="Bold"
+               FontSize="Medium"
+               TextColor="Black"/>
         
+        <Label Text="{Binding Weight}"
+               FontAttributes="Bold"
+               FontSize="Medium"
+               TextColor="Black"/>
+
     </VerticalStackLayout>
     
 </ContentPage>

@@ -7,5 +7,6 @@ namespace PetLink.ViewModels
 {
     class PetProfileViewModel : ObservableObject
     {
+
     }
 }

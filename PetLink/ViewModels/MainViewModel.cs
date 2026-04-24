@@ -1,25 +1,15 @@
-﻿using CommunityToolkit.Mvvm;
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using PetLink.Models.Titles;
 using PetLink.Pages;
-using PetLink.Views;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PetLink.ViewModels
 {
     public partial class MainViewModel : ObservableObject
     {
-        //public string Layouts { get; set; } = TitleMain.Layouts;
-        //public string Images { get; set; } = TitleMain.Images;
-        //public string Collections { get; set; } = TitleMain.Collections;
-        //public string Controls { get; set; } = TitleMain.Controls;
-        //public string SQLLITE { get; set; } = TitleMain.SQLLite;
-
-        [ObservableProperty]
-        private string title = TitleMain.Title;
+        public string Title => TitleMain.Title;
+        public string Login => TitleMain.Login;
+        public string Register => TitleMain.Register;
 
         [RelayCommand]
         private async Task LoginClicked()

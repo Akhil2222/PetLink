@@ -2,13 +2,37 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PetLink.Pages.LikedPetsPage"
-             Title="LikedPetsPage">
-    
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+             Title="{Binding Title}">
+
+    <VerticalStackLayout VerticalOptions="Center"
+                         HorizontalOptions="Center"
+                         Spacing="15">
+
+        <Label Margin="75,-200,75,0"
+               Text="Your Liked Pets"
+               FontAttributes="Bold"
+               FontSize="Title"
+               TextColor="Blue"/>
+
+        <Grid Padding="8">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Label Text="Pet 1"
+                   Grid.Row="1"
+                   FontSize="Small"
+                   HorizontalTextAlignment="Start"
+                   TextColor="Black"/>
+
+            <Button Text="Register"
+                    FontAttributes="Bold"
+                    FontSize="15"
+                    Margin="40,10,40,0"
+                    TextColor="White"
+                    BackgroundColor="DarkGreen"
+                    Command="{Binding PetProfilePage}"/>
+        </Grid>
     </VerticalStackLayout>
-    
+
 </ContentPage>

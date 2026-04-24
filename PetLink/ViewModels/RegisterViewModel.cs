@@ -1,11 +1,7 @@
-﻿
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using PetLink.Models.Titles;
 using PetLink.Pages;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace PetLink.ViewModels
 {
@@ -13,7 +9,7 @@ namespace PetLink.ViewModels
     {
         [ObservableProperty]
         private string title = TitleRegister.Title;
-        
+
         [ObservableProperty]
         private string passwordConditions = TitleRegister.PasswordConditions;
 

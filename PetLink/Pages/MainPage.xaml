@@ -36,6 +36,12 @@
                     Command="{Binding RegisterClickedCommand}"
                     Style="{StaticResource TileButton}"/>
 
+            <Button Grid.Row="2"
+                    Grid.Column="0"
+                    Text="{Binding PetProfile}"
+                    Command="{Binding PetProfileClickedCommand}"
+                    Style="{StaticResource TileButton}"/>   
+
         </Grid>
 
     </VerticalStackLayout>

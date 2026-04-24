@@ -14,47 +14,48 @@
                FontSize="Title"
                TextColor="Blue"/>
 
-        <Entry x:Name="FirstNameValue"
-                Placeholder="Enter First Name"
-                PlaceholderColor="Gray"
-                TextColor="Black"
-                WidthRequest="300" />
+        <Entry Text="{Binding firstname, Mode=TwoWay}"
+               Placeholder="Enter First Name"
+               PlaceholderColor="Gray"
+               TextColor="Black"
+               WidthRequest="300" />
 
-        <Entry x:Name="LastNameValue"
-                Placeholder="Enter Last Name"
-                PlaceholderColor="Gray"
-                TextColor="Black"
-                WidthRequest="300" />
+        <Entry Text="{Binding lastname, Mode=TwoWay}"
+               Placeholder="Enter Last Name"
+               PlaceholderColor="Gray"
+               TextColor="Black"
+               WidthRequest="300" />
 
-        <Entry x:Name="UserNameValue"
-                Placeholder="Enter Username/Gmail"
-                PlaceholderColor="Gray"
-                TextColor="Black"
-                WidthRequest="300" />
+        <Entry Text="{Binding username, Mode=TwoWay}"
+               Placeholder="Enter Username/Gmail"
+               PlaceholderColor="Gray"
+               TextColor="Black"
+               WidthRequest="300" />
 
-        <Entry x:Name="PasswordValue"
-                Placeholder="Enter Password"
-                PlaceholderColor="Gray"
-                TextColor="Black"
-                WidthRequest="300" />
+        <Entry Text="{Binding password, Mode=TwoWay}"
+               Placeholder="Enter Password"
+               PlaceholderColor="Gray"
+               TextColor="Black"
+               WidthRequest="300" />
 
         <Label Margin="60,-15,40,0"
                Text="{Binding PasswordConditions}"
                FontSize="13"
                TextColor="Black" />
 
-        <Entry x:Name="ConfirmPasswordValue"
-                Placeholder="Confirm Password"
-                PlaceholderColor="Gray"
-                TextColor="Black"
-                WidthRequest="300" />
-
+        <Entry Text="{Binding confirmPassword, Mode=TwoWay}"
+               Placeholder="Confirm Password"
+               PlaceholderColor="Gray"
+               TextColor="Black"
+               WidthRequest="300" />
+        
         <Button Text="Register"
                 FontAttributes="Bold"
                 FontSize="15"
                 Margin="40,10,40,0"
                 TextColor="White"
                 BackgroundColor="DarkGreen"
-                Clicked="RegisterSubmitClicked"/>
+                Command="{Binding RegisterSubmitClickedCommand}"/>
+        
     </VerticalStackLayout>
 </ContentPage>

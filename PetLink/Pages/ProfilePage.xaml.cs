@@ -1,10 +1,12 @@
+using PetLink.ViewModels;
+
 namespace PetLink.Pages;
 
 public partial class ProfilePage : ContentPage
 {
-	public ProfilePage()
+	public ProfilePage(ProfileViewModel vm)
 	{
 		InitializeComponent();
-		BindingContext = new ViewModels.ProfileViewModel();
+		BindingContext = vm;
     }
 }

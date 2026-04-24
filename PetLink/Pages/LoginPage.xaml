@@ -19,7 +19,9 @@
             <Entry Placeholder = "{Binding PasswordText}"
                    PlaceholderColor = "Blue"
                    TextColor="Crimson"
-                   WidthRequest="300"/>
+                   WidthRequest="300"
+                   IsPassword="True"/>
+
         </VerticalStackLayout>
         
         <Button Grid.Row="1"

@@ -14,12 +14,12 @@ namespace PetLink.ViewModels
         private string passwordConditions = TitleRegister.PasswordConditions;
 
 
-        [RelayCommand]
-        private async Task AboutYouClicked()
-        {
-            //await Application.Current.MainPage.Navigation.PushAsync(new LayoutsPage());
-            await Shell.Current.GoToAsync(nameof(AboutYouPage));
-        }
+        //[RelayCommand]
+        //private async Task AboutYouClicked()
+        //{
+        //    //await Application.Current.MainPage.Navigation.PushAsync(new LayoutsPage());
+        //    await Shell.Current.GoToAsync(nameof(AboutYouPage));
+        //}
 
         public RegisterViewModel()
         {

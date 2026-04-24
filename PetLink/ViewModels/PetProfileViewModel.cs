@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using PetLink.Models.Titles;
 
-namespace MyFirstMauiApp.View_Models
+namespace PetLink.View_Models
 {
     public partial class PetProfileViewModel : ObservableObject
     {

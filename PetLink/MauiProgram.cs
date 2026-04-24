@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
+using PetLink.View_Models;
 using PetLink.ViewModels;
 
 namespace PetLink
@@ -29,7 +30,7 @@ namespace PetLink
             builder.Services.AddSingleton<FindMyPetViewModel>();
             builder.Services.AddSingleton<DashboardViewModel>();
             builder.Services.AddSingleton<ContactShelterViewModel>();
-            builder.Services.AddSingleton<AboutYouViewModel>();
+            //builder.Services.AddSingleton<AboutYouViewModel>();
 
             return builder.Build();
         }

@@ -61,7 +61,7 @@ namespace PetLink.ViewModels
             }
 
             //Every entry is filled correctly
-            //await Shell.Current.GoToAsync($"{nameof(AboutYouPage)}");
+            await Shell.Current.GoToAsync($"{nameof(AboutYouPage)}");
         }
 
         public RegisterViewModel()

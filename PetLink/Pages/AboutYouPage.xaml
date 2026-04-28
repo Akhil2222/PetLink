@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PetLink.Pages.AboutYouPage"
+             Title="{Binding Title}">
+    <VerticalStackLayout VerticalOptions="Center"
+                         HorizontalOptions="Center"
+                         Spacing="15">
+
+        <Entry Text="{Binding EntryText, Mode=TwoWay}"
+               Placeholder="Enter Phone Number Here"
+               PlaceholderColor="Blue"
+               TextColor="Crimson"
+               WidthRequest="300" />
+
+        <Entry Text="{Binding EntryText, Mode=TwoWay}"
+               Placeholder="Enter Birth Date Here"
+               PlaceholderColor="Blue"
+               TextColor="Crimson"
+               WidthRequest="300" />
+        
+        <Entry Text="{Binding EntryText, Mode=TwoWay}"
+               Placeholder="Enter Zipcode Here"
+               PlaceholderColor="Blue"
+               TextColor="Crimson"
+               WidthRequest="300" />
+
+        <Button Text="Submit"
+                FontAttributes="Bold, Italic"
+                Margin="10"
+                TextColor="White"
+                BackgroundColor="Blue"
+                Command="{Binding EntryClickedCommand}" />
+
+        <BoxView Color="Blue"
+                 HeightRequest="25" HorizontalOptions="Fill" Opacity="{Binding Slider}"/>
+
+        <Slider Minimum="0" Maximum="1" Value="{Binding Slider, Mode=TwoWay}"
+                ThumbColor="Blue" MaximumTrackColor="BlueViolet" MinimumTrackColor="DarkOrange"
+                HorizontalOptions="Fill"/>  
+
+        <Label Text="{Binding Slider, StringFormat='Value of the slider is: {0:F2}'}"
+               FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" />
+
+        <Label Text="{Binding Instruction}"
+               FontAttributes="Bold"
+               FontSize="Medium"
+               HorizontalOptions="Center"
+               TextColor="Blue"/>
+
+        <Button Grid.Row="0"
+                Grid.Column="0"
+                BackgroundColor="#512bd4"
+                HorizontalOptions="Center"
+                Text="{Binding SetToHalf}"
+                Command="{Binding SetToHalfClickedCommand}" 
+                Style="{StaticResource TileButton}" />
+
+    </VerticalStackLayout>
+</ContentPage>

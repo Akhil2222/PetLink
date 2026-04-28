@@ -98,6 +98,9 @@
 	  <MauiXaml Update="Models\Titles\TitleFindMyPet.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\AboutYouPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\ContactShelterPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

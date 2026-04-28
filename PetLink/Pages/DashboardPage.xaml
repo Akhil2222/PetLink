@@ -18,9 +18,11 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -43,6 +45,13 @@
                     Grid.Column="1"
                     Text="{Binding LikedPets}"
                     Command="{Binding LikedPetsClickedCommand}"
+                    Style="{StaticResource TileButton}"
+                    WidthRequest="300"/>
+
+            <Button Grid.Row="3"
+                    Grid.Column="1"
+                    Text="{Binding AboutYou}"
+                    Command="{Binding AboutYouClickedCommand}"
                     Style="{StaticResource TileButton}"
                     WidthRequest="300"/>
         </Grid>

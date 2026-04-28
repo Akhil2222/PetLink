@@ -36,6 +36,7 @@
                     Command="{Binding RegisterClickedCommand}"
                     Style="{StaticResource TileButton}"/>
 
+
         </Grid>
 
     </VerticalStackLayout>

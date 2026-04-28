@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PetLink.ViewModels
 {
-    public partial class FindMyPetViewModel: ObservableObject
+    public partial class FindMyPetViewModel : ObservableObject
     {
         
     }

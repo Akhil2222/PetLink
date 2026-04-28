@@ -2,6 +2,7 @@
 {
     public static class TitlePetProfile
     {
+        public static string Name { get; } = "Clementine Cake";
         public static string Image { get; } = "https://bakesbybrownsugar.com/wp-content/uploads/2022/01/Clementine-Cake-1-2.jpg";
         public static string Species { get; } = "Cake";
         public static string Age { get; } = "1 day";

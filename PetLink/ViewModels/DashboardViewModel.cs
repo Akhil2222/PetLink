@@ -1,11 +1,8 @@
-﻿using CommunityToolkit.Mvvm;
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using PetLink.Models.Titles;
 using PetLink.Pages;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using PetLink.ViewModels;
 
 namespace PetLink.ViewModels
 {
@@ -39,6 +36,7 @@ namespace PetLink.ViewModels
         private async Task FindMyPetClicked()
         {
             await Shell.Current.GoToAsync(nameof(FindMyPetPage));
+            //await Shell.Current.Navigation.PushAsync(new FindMyPetPage());
         }
 
         [RelayCommand]

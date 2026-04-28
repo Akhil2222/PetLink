@@ -39,6 +39,7 @@
                     Command="{Binding FindMyPetClickedCommand}"
                     Style="{StaticResource TileButton}"
                     WidthRequest="300"/>
+            
             <Button Grid.Row="2"
                     Grid.Column="1"
                     Text="{Binding LikedPets}"

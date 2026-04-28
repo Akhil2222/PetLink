@@ -7,6 +7,11 @@ namespace PetLink.View_Models
     {
         [ObservableProperty]
         private ImageSource imageSourceURL;
+        public string Name => TitlePetProfile.Name;
+        public string Species => TitlePetProfile.Species;
+        public string Age => TitlePetProfile.Age;
+        public string Weight => TitlePetProfile.Weight;
+
         public PetProfileViewModel()
         {
             ImageSourceURL = new UriImageSource

@@ -14,25 +14,25 @@
                FontSize="Title"
                TextColor="Blue"/>
 
-        <Entry Text="{Binding firstname, Mode=TwoWay}"
+        <Entry Text="{Binding Firstname, Mode=TwoWay}"
                Placeholder="Enter First Name"
                PlaceholderColor="Gray"
                TextColor="Black"
                WidthRequest="300" />
 
-        <Entry Text="{Binding lastname, Mode=TwoWay}"
+        <Entry Text="{Binding Lastname, Mode=TwoWay}"
                Placeholder="Enter Last Name"
                PlaceholderColor="Gray"
                TextColor="Black"
                WidthRequest="300" />
 
-        <Entry Text="{Binding username, Mode=TwoWay}"
+        <Entry Text="{Binding Username, Mode=TwoWay}"
                Placeholder="Enter Username/Gmail"
                PlaceholderColor="Gray"
                TextColor="Black"
                WidthRequest="300" />
 
-        <Entry Text="{Binding password, Mode=TwoWay}"
+        <Entry Text="{Binding Password, Mode=TwoWay}"
                Placeholder="Enter Password"
                PlaceholderColor="Gray"
                TextColor="Black"
@@ -43,13 +43,13 @@
                FontSize="13"
                TextColor="Black" />
 
-        <Entry Text="{Binding confirmPassword, Mode=TwoWay}"
+        <Entry Text="{Binding ConfirmPassword, Mode=TwoWay}"
                Placeholder="Confirm Password"
                PlaceholderColor="Gray"
                TextColor="Black"
                WidthRequest="300" />
         
-        <Button Text="Register"
+        <Button Text="{Binding Submit}"
                 FontAttributes="Bold"
                 FontSize="15"
                 Margin="40,10,40,0"

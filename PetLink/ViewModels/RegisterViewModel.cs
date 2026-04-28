@@ -44,7 +44,7 @@ namespace PetLink.ViewModels
 
             else
             {
-                //await Shell.Current.GoToAsync($"{nameof(AboutYouPage)}");
+                await Shell.Current.GoToAsync($"{nameof(AboutYouPage)}");
             }
         }
 

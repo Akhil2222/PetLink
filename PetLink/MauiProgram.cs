@@ -30,7 +30,7 @@ namespace PetLink
             builder.Services.AddSingleton<FindMyPetViewModel>();
             builder.Services.AddSingleton<DashboardViewModel>();
             builder.Services.AddSingleton<ContactShelterViewModel>();
-            //builder.Services.AddSingleton<AboutYouViewModel>();
+            builder.Services.AddSingleton<AboutYouViewModel>();
 
             return builder.Build();
         }

@@ -20,7 +20,7 @@ namespace PetLink
             Routing.RegisterRoute(nameof(RegisterPage), typeof(RegisterPage));
 
             //AboutYou Page
-            //Routing.RegisterRoute(nameof(AboutYouPage), typeof(AboutYouPage));
+            Routing.RegisterRoute(nameof(AboutYouPage), typeof(AboutYouPage));
 
             //Login Page
             Routing.RegisterRoute(nameof(LoginPage), typeof(LoginPage));

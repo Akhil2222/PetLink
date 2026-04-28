@@ -36,7 +36,6 @@ namespace PetLink.ViewModels
         private async Task FindMyPetClicked()
         {
             await Shell.Current.GoToAsync(nameof(FindMyPetPage));
-            //await Shell.Current.Navigation.PushAsync(new FindMyPetPage());
         }
 
         [RelayCommand]

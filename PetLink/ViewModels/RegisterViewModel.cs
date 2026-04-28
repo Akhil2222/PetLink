@@ -13,7 +13,10 @@ namespace PetLink.ViewModels
         [ObservableProperty]
         private string passwordConditions = TitleRegister.PasswordConditions;
 
-        
+        [ObservableProperty]
+        private string submit = TitleRegister.Submit;
+
+
         [ObservableProperty]
         private string firstname;
         
@@ -32,20 +35,33 @@ namespace PetLink.ViewModels
         [RelayCommand]
         private async Task RegisterSubmitClicked()
         {
+            //If any required field is empty
             if (string.IsNullOrWhiteSpace(firstname)
-                && string.IsNullOrWhiteSpace(lastname)
-                && string.IsNullOrWhiteSpace(username)
-                && string.IsNullOrWhiteSpace(password)
-                && string.IsNullOrWhiteSpace(confirmPassword))
+                || string.IsNullOrWhiteSpace(lastname)
+                || string.IsNullOrWhiteSpace(username)
+                || string.IsNullOrWhiteSpace(password)
+                || string.IsNullOrWhiteSpace(confirmPassword))
             {
-                await Shell.Current.DisplayAlert(TitleRegister.Title, "Entry is empty. Please enter text.", "OK");
+                await Shell.Current.DisplayAlert(TitleRegister.Title, "Please fill in all required fields.", "OK");
                 return;
             }
 
-            else
+            //Password must meet all specifications
+            if (password.Length < 8)
             {
-                await Shell.Current.GoToAsync($"{nameof(AboutYouPage)}");
+                await Shell.Current.DisplayAlert(TitleRegister.Title, passwordConditions, "OK");
+                return;
             }
+
+            //confirmPassword must match password
+            if (!password.Equals(confirmPassword))
+            {
+                await Shell.Current.DisplayAlert(TitleRegister.Title, "Passwords do not match.", "OK");
+                return;
+            }
+
+            //Every entry is filled correctly
+            //await Shell.Current.GoToAsync($"{nameof(AboutYouPage)}");
         }
 
         public RegisterViewModel()

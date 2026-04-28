@@ -49,7 +49,7 @@
                TextColor="Black"
                WidthRequest="300" />
         
-        <Button Text="Register"
+        <Button Text="{Binding Submit}"
                 FontAttributes="Bold"
                 FontSize="15"
                 Margin="40,10,40,0"

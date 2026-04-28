@@ -47,6 +47,12 @@ namespace PetLink.ViewModels
             await Shell.Current.GoToAsync(nameof(LikedPetsPage));
         }
 
+        [RelayCommand]
+        private async Task AboutYouClicked()
+        {
+            await Shell.Current.GoToAsync(nameof(AboutYouPage));
+        }
+
         public DashboardViewModel()
         {
 

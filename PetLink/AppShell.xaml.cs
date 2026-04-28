@@ -10,6 +10,7 @@ namespace PetLink
             InitializeComponent();
             RegisterRoutes();
         }
+
         private void RegisterRoutes()
         {
             //Main Page
@@ -23,8 +24,6 @@ namespace PetLink
 
             //Login Page
             Routing.RegisterRoute(nameof(LoginPage), typeof(LoginPage));
-            Routing.RegisterRoute(nameof(RegisterPage), typeof(RegisterPage));
-            Routing.RegisterRoute(nameof(AboutYouPage), typeof(AboutYouPage));
             Routing.RegisterRoute(nameof(DashboardPage), typeof(DashboardPage));
             Routing.RegisterRoute(nameof(ProfilePage), typeof(ProfilePage));
             Routing.RegisterRoute(nameof(FindMyPetPage), typeof(FindMyPetPage));
